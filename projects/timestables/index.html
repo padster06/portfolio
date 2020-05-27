@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Boilerplate - Canvas</title>
+		<style>
+		*{
+			padding:0;
+			margin:0;
+			touch-action: manipulation;
+		}
+		body{
+			text-align:center;
+			background-color:#eeeeee;
+			overflow:hidden;
+		}
+		#myCanvas{
+			border:solid 1px #555;
+		}
+		#new{
+			position:fixed;
+			left:400px;
+			bottom:100px;
+			opacity:1;
+			padding:15px;
+			font-size: 50px;
+			color: white;
+			background-color: purple;
+		}
+		#reveal{
+			position:fixed;
+			left:600px;
+			bottom:100px;
+			opacity:1;
+			padding:15px;
+			font-size: 40px;
+			color: white;
+			background-color: purple;
+		}
+		#google{
+			position:fixed;
+			left:800px;
+			bottom:100px;
+			opacity:1;
+			padding:15px;
+			font-size: 40px;
+			color: white;
+			background-color: purple;
+		}
+		button{
+			width:150px;
+			height:150px;
+			border-radius:50px;
+		}
+		</style>
+	</head>
+	<script src="lib.js"></script>
+	<body>
+		<button id="new">go</button>
+		<button id="reveal">reveal</button>
+		<canvas id='myCanvas' width=800 height=600></canvas>
+		<button id="google">google</button>
+	</body>
+	<script type='text/javascript'>
+		init();
+		document.getElementById('myCanvas').width=window.innerWidth;
+		document.getElementById('myCanvas').height=window.innerHeight;
+	</script>
+</html>
